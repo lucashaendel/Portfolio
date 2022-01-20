@@ -1,0 +1,1030 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding: 70px;
+}
+
+body{
+
+    background-color: rgb(233, 233, 233);
+}
+
+header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(18, 54, 82);
+    z-index: 1;
+}
+
+header img{
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 8%;
+    z-index: 3;
+}
+
+#site-nav{
+    margin-left: 40%;
+}
+
+.menu{
+    width: 50%;
+    margin: 0;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu, .menu ul
+{   display: flex; }
+
+.menu li a{
+    padding: 1.5vh 5px;
+    font-size: 1.1em;
+    color: white;
+    background-image: linear-gradient(rgb(255, 212,50), rgb(255, 212,50));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;
+}
+
+li a:hover, a:focus{
+    background-size: 100% 2px;
+    color: rgb(255, 212,50);
+}
+
+.menu ul li a{
+    margin: 0 20px;
+}
+
+
+.progreso{
+    width: 100%;
+    height: 1vh;
+    background-color: rgb(18, 54, 82);
+    position: fixed;
+    z-index: 1;
+}
+
+.barra{
+    height: 1vh;
+    background-color: rgb(255, 212,50);
+    width: 0%;
+    position: fixed;
+    border-radius: 2px;
+}
+
+/* =========================================
+        FIN DE LA BARRA DE NAVEGACION
+============================================ */
+
+#home{
+    margin-top: 1vh;
+    width: 100%;
+    height: 91vh;
+    /* background-color: rgb(34, 94, 139); */
+    background-color: rgb(5, 34, 48);
+    display: flex;
+    overflow: hidden;
+}
+
+.info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presents{
+    width: 80%;
+    height: 70%;
+    color: white;
+    margin-left: 10%;
+}
+
+.presents p{
+    font-size: 2rem;
+    color: white;
+}
+
+
+.presents h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.presents h2{
+    font-size: 2rem;
+    color: rgb(255, 212,50);
+    display: inline;
+    border-right: 3px solid white;
+}
+
+
+.icons{
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.icons i{
+    color: rgb(99, 99, 99);
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.icons i:hover{
+    color: rgb(255, 212,50);
+    transition: 0.3s ease-in-out;
+}
+
+.img-lucas{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-lucas img{
+    width: auto;
+    height: 100%;
+    margin-top: 1vh;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.custom-shape-divider-bottom-1642030938 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1642030938 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1642030938 .shape-fill {
+    fill: #E9E9E9;
+}
+
+/* =========================================
+                COMIENZA SOBRE MI
+============================================ */
+
+#about-me{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(52, 158, 118);
+    margin-top: -30vh;
+    top: 0;
+}
+
+.text p{
+    font-size: 1rem;
+    color: rgb(5, 34, 48);
+}
+
+
+.text h3{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(52, 158, 118);
+}
+
+.text{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 10%;
+}
+
+.btn-cv{
+    margin-top: 5vh;
+    width: 40%;
+    height: 8vh;
+    font-size: 1.1rem;
+    border: 1px solid rgb(5, 34, 48);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    text-align: center;
+    color: rgb(5, 34, 48);
+    padding-top: 3%;
+}
+
+.btn-cv:hover{
+    background: rgb(5, 34, 48);
+    color: rgb(255, 212,50);
+    transition: 0.3s ease; 
+}
+
+.animado{
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.mostrarAbajo{
+    animation: mostrarAbajo 1s;
+}
+@keyframes mostrarAbajo{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-60px);
+    }
+}
+
+.button{
+    position:relative;padding:1em 1.5em;
+    border:none;
+    background-color: transparent;
+    cursor:pointer;
+    outline:0;
+    font-size:18px;
+    margin:1em .8em
+}
+
+.button.type3{
+    color:rgb(5, 34, 48)
+}
+
+.button.type3.type3::after,.button.type3.type3::before{
+    content:"";
+    display:block;
+    position:absolute;
+    width:20%;
+    height:20%;
+    border:3px solid;
+    transition:all .6s ease;
+    border-radius:3px;
+}
+.button.type3.type3::after{
+    bottom:0;
+    right:0;
+    border-color:transparent rgb(5, 34, 48) rgb(5, 34, 48) transparent;
+}
+.button.type3.type3::before{
+    top:0;
+    left:0;
+    border-color:rgb(5, 34, 48) transparent transparent rgb(5, 34, 48);
+}
+.button.type3.type3:hover:after,.button.type3.type3:hover:before{
+    border-color:rgb(52, 158, 118);
+    width:100%;
+    height:100%;
+}
+
+
+
+
+/* =========================================
+                COMIENZA LOS SKILLS
+============================================ */
+
+#skills{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0;
+}
+
+#skills h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-top: 3px solid rgb(18, 54, 82);
+    padding: 10vh 5% 0% 5%;
+    color: rgb(52, 158, 118);
+}
+
+#icons-skill{
+    margin-top: 5vh;
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-skill{
+    width: 10%;
+    height: 20vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 1%;
+}
+
+.icon-skill img{
+    width: 65%;
+    margin-bottom: 1vh;
+    transition: 1s ease;
+}
+
+.icon-skill p{
+    font-size: 1rem;
+}
+
+ 	
+.icon-skill img:hover {
+    scale: 1.5;
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 1s ease;
+}
+
+/* =========================================
+                COMIENZA EL PORTFOLIO
+============================================ */
+
+#portfolio{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#portfolio h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-top: 3px solid rgb(18, 54, 82);
+    padding: 10vh 5% 5vh;
+    color: rgb(52, 158, 118);
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: yellow; */
+    width: 85%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.filterDiv {
+    float: left;
+    /* background-color: #2196F3; */
+    color: #ffffff;
+    width: 300px;
+      height: 200px;
+    
+    text-align: center;
+    margin: 10px 20px;
+    display: none;
+    padding: 0;
+  }
+
+  .filterDiv img{
+    width: 100%;
+    height: 100%;
+      border-radius: 5px;
+      box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.60);
+-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.60);
+-moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.60);
+  }
+
+
+  
+  .show {
+    display: block;
+  }
+  
+  .container {
+    margin-top: 3vh;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* background-color: red; */
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    height: 5vh;
+    background: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p{
+    color: white;
+}
+
+
+/* ============== COMIENZA EL RESPONSIVE ================== */
+
+@media (min-width: 1899px) and (max-width: 2999px){
+    header{
+        height: 7vh;
+        top: 0;
+        position: sticky;
+        padding: 0;
+        z-index: 3;
+    }
+
+    header img{
+        height: 85%;
+    }
+
+    #site-nav{
+        margin-left: 50%;
+    }
+
+    .menu ul li a{
+        font-size: 1.6rem;
+    }
+
+
+
+    .menu li a{
+        padding: 0 5px 10px;
+        color: white;
+        background-image: linear-gradient(rgb(255, 212,50), rgb(255, 212,50));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 5px;
+        transition: background-size .4s;
+    }
+    
+    li a:hover, a:focus{
+        background-size: 100% 2px;
+        color: rgb(255, 212,50);;
+    }
+
+
+
+
+
+    .progreso{
+        height: 0.5vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .barra{
+        height: 0.5vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #home{
+        height: 80vh;
+        margin-top: 0vh;
+    }
+
+    .custom-shape-divider-bottom-1642030938 {
+        top: 0;
+        margin-top: 82vh;
+    }
+}
+
+
+
+
+
+/* ========== RESONSIVE MOBILE ========== */
+@media (min-width:400px) and (max-width: 450px){
+        
+    header{
+        height: 5vh;
+        position: fixed;
+        top: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img{
+        height: 80%;
+        
+    }
+
+    .progreso{
+        height: 0.7vh;
+    }
+
+    .barra{
+        height: 0.7vh;
+    }
+
+    
+
+    /* ========= INICIO MENU HAMBURUGUESA ======== */
+    .menu
+    {
+        top:0;
+        right: 0;
+        margin-top: 4vh;
+        width: 100%;
+        height: 97vh;
+        position: absolute;
+        background-color: rgb(18, 54, 82);;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site-nav-open
+    {
+    clip-path: circle(150% at top right);
+    }
+
+    .menu ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu li{
+        font-size: 1.5rem;
+        margin: 7vh auto;
+    }
+
+    .menu-toggle{
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 1vh;
+    }
+
+    .menu-open .hamburger
+    {
+        transform: rotate(45deg);
+    }
+
+    .menu-open .hamburger::before
+    {
+        opacity: 0;
+    }
+
+    .menu-open .hamburger::after
+    {
+        transform: translateY(-3px) rotate(-90deg)
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after
+    {
+        content: '';
+        display: block;
+        background-color: rgb(255, 212,50);
+        height: .2rem;
+        width: 2em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms ;
+    }
+
+    .hamburger::before
+    {
+        transform: translateY(-6px);
+    }
+
+    .hamburger::after
+    {
+        transform: translateY(3px);
+    }
+/* ========= FIN MENU HAMBURUGUESA ======== */
+
+    #home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 46vh;
+        margin-top: 5vh;
+    }
+
+    .img-lucas{
+        display: none;
+    }
+
+    .info{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .presents{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .presents p{
+        font-size: 1.5rem;
+    }
+    
+    
+    .presents h1{
+        font-size: 3.2rem;
+        margin: 1.5vh 0;
+    }
+    
+    .presents h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    
+    .custom-shape-divider-bottom-1642030938 {
+        top: 0;
+        margin-top: 46vh;
+    }
+
+    #about-me{
+        width: 100%;
+        height: 75vh;
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+
+    .text{
+        width: 85%;
+        height: 10%;
+    }
+
+    .animado{
+        opacity: 1;
+    }   
+
+    .text h2{
+        font-size: 2rem;
+        margin-bottom: 3vh;
+       
+    }
+    
+    .text p{
+        font-size: 1rem;
+        color: rgb(5, 34, 48);
+    }
+    
+    
+    .text h3{
+        margin-top: -35vh;
+        margin-bottom: 3vh;
+        padding: 0;
+    }
+    
+    .animado{
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .mostrarArriba{
+        animation: mostrarArriba 0.3s;
+    }
+
+    .mostrarAbajo{
+        animation: mostrarAbajo 0.3s;
+    }
+
+    .btn-cv{
+        width: 50%;
+        padding-top: 3%;
+        height: 5vh;
+    }
+
+    #skills{
+        margin: 0;
+        margin-bottom: 15vh;
+    }
+
+    #icons-skill{
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .icon-skill{
+        width: 25%;
+        margin: 0;
+    }
+
+
+    #footer{
+        margin-top: 30vh;
+    }   
+
+
+}
+
+
+ /* RESPONSIVE MOBILE SMALL */
+
+ @media (max-width:399px) {
+
+    
+    header img{
+        height: 80%;
+        
+    }
+
+    .progreso{
+        height: 0.7vh;
+    }
+
+    .barra{
+        height: 0.7vh;
+    }
+
+    
+
+    /* ========= INICIO MENU HAMBURUGUESA ======== */
+    .menu
+    {
+        top:0;
+        right: 0;
+        margin-top: 5vh;
+        width: 100%;
+        height: 97vh;
+        position: absolute;
+        background-color: rgb(18, 54, 82);;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site-nav-open
+    {
+    clip-path: circle(150% at top right);
+    }
+
+    .menu ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu li{
+        font-size: 1.5rem;
+        margin: 7vh auto;
+    }
+
+    .menu-toggle{
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 2vh;
+    }
+
+    .menu-open .hamburger
+    {
+        transform: rotate(45deg);
+    }
+
+    .menu-open .hamburger::before
+    {
+        opacity: 0;
+    }
+
+    .menu-open .hamburger::after
+    {
+        transform: translateY(-3px) rotate(-90deg)
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after
+    {
+        content: '';
+        display: block;
+        background-color: rgb(255, 212,50);
+        height: .2rem;
+        width: 2em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms ;
+    }
+
+    .hamburger::before
+    {
+        transform: translateY(-6px);
+    }
+
+    .hamburger::after
+    {
+        transform: translateY(3px);
+    }
+/* ========= FIN MENU HAMBURUGUESA ======== */
+
+    #home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 54vh;
+        margin-top: -1vh;
+    }
+
+    .img-lucas{
+        display: none;
+    }
+
+    .info{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .presents{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .presents p{
+        font-size: 1.5rem;
+    }
+    
+    
+    .presents h1{
+        font-size: 3.2rem;
+        margin: 1.5vh 0;
+    }
+    
+    .presents h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    
+    .custom-shape-divider-bottom-1642030938 {
+        top: 0;
+        margin-top: 55vh;
+    }
+
+    #about-me{
+        width: 100%;
+        height: 75vh;
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+
+    .text{
+        width: 85%;
+        height: 10%;
+    }
+
+    .animado{
+        opacity: 1;
+    }   
+
+    .text h2{
+        font-size: 2rem;
+        margin-bottom: 3vh;
+       
+    }
+    
+    .text p{
+        font-size: 1rem;
+        color: rgb(5, 34, 48);
+    }
+    
+    
+    .text h3{
+        margin-top: -25vh;
+        margin-bottom: 3vh;
+        padding: 0;
+    }
+    
+    .animado{
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .mostrarArriba{
+        animation: mostrarArriba 0.3s;
+    }
+
+    .mostrarAbajo{
+        animation: mostrarAbajo 0.3s;
+    }
+
+    .btn-cv{
+        width: 50%;
+        padding-top: 3%;
+        height: 5vh;
+    }
+
+    #skills{
+        margin: 0;
+        margin-bottom: 15vh;
+    }
+
+    #icons-skill{
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .icon-skill{
+        width: 25%;
+        margin: 0;
+    }
+
+    
+
+    #footer{
+        margin-top: 56vh;
+    }
+ }
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/lh-logo.png" type="image/x-icon" alt="lh-logo">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Lucas Haendel</title>
+</head>
+<body>
+    <header>
+        <img src="img/lh-logo.png" alt="lh-logo">
+
+         <nav id="site-nav" class="menu">
+            <ul>
+                <li><a href="#home" >Inicio</a></li>
+                <li><a href="#about-me"skills">Sobre mi</a></li>
+                <li><a href="#skills"skills">Skills</a></li>
+                <li><a href="#portfolio"portfolio">Portfolio</a></li>
+                <!-- <li><a href="cv/Lucas Haendel.pdf" target="_blank" >CV</a></li> -->
+            </ul>
+        </nav>          
+
+        <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+
+    </header>
+
+    <div class="progreso">
+        <div class="barra"></div>
+    </div>
+
+
+
+    <div id=home>
+        <div class="info">
+            <div class="presents">
+                <p>¡Hola! Bienvenid@ a mi web.</p>
+                <h1>Lucas Haendel</h2>
+                <h2 id="maqesc"> Full Stack Developer</h2>
+                <div class="icons">
+                    <a class="icon" href="https://www.facebook.com/Lucas.p.haendel/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a class="icon" href="https://www.linkedin.com/in/lucashaendel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="icon" href="https://github.com/lucashaendel" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a class="icon" href="mailto:lucas.ph@live.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div" class="img-lucas" >
+            <img src="img/lucas.png" title="lucas" alt="lucas-img">
+            
+        </div>
+
+
+        <div class="custom-shape-divider-bottom-1642030938">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+
+
+    </div>
+
+    <div id="about-me">
+        <article class="text animado">
+            <h2>¿Quien soy?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea et neque aliquam quos expedita ut, nesciunt temporibus</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        </article>
+
+        <article class="text animado">
+            <h3>Sobre mi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae aliquid, necessitatibus dolorum repudiandae minima</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo maiores ab dolorum dolores, sed consectetur temporibus  </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo maiores ab dolorum dolores, sed consectetur temporibus dolor sit amet consectetur adipisicing elit.  </p>
+
+            <!-- <a class="btn-cv" href="cv/Lucas Haendel.pdf" target="_blank">Descargar CV</a>
+
+
+            <button class="button type1">
+                <a href="cv/Lucas Haendel.pdf" target="_blank">Descargar CV</a>
+            </button> -->
+            
+                <a href="cv/Lucas Haendel.pdf" target="_blank"><button class="button type3">Descargar CV</button></a>
+            
+        </article>
+    </div>
+    
+    <div id="skills">
+        <h2>Habilidades</h2>
+
+        <div id="icons-skill">
+            <figure  data-aos="fade-right" class="icon-skill">
+                <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML-5">
+                <p>HTML 5</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/color/480/000000/css3.png" alt="css-3">
+                <p>CSS 3</p>
+                
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" alt="Javascript">
+                <p>Javascript</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/color/480/000000/python--v1.png" alt="Python">
+                <p>Python</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/color/480/000000/git.png" alt="Git">
+                <p>Git</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/material-outlined/480/000000/github.png" alt="GitHub">
+                <p>GitHub</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/fluency/480/000000/visual-studio-code-2019.png" alt="VSCode">
+                <p>V.S. Code</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/fluency/480/000000/mysql-logo.png" alt="MySQL">
+                <p>MySQL</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/color/480/000000/adobe-photoshop--v1.png" alt="Photoshop">
+                <p>Photoshop</p>
+            </figure>
+            <figure class="icon-skill">
+                <img src="https://img.icons8.com/color/480/000000/adobe-illustrator--v1.png" alt="Illustrator">
+                <p>Illustrator</p>
+        </figure>
+            
+        </div>
+    </div>
+    
+
+
+
+    <div id="portfolio">
+        <h2>Mis Proyectos</h2>
+        <div class="projects">
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Ver Todo</button>
+                <button class="btn" onclick="filterSelection('web')"> Web</button>
+                <button class="btn" onclick="filterSelection('games')">Juegos</button>
+              </div>
+              
+              <div class="container">
+                <div class="filterDiv web"><img src="img/portenian.png" alt=""></div>
+                <div class="filterDiv web"><img src="img/pedimon.png" alt="Pedimon"></div>
+                <div class="filterDiv web"><img src="img/cafe.png" alt="Cafe"></div>
+                <div class="filterDiv web"><img src="img/prueba-css.png" alt="prueba-css"></div>
+                <div class="filterDiv web"><img src="img/coca.png" alt="Coca"></div>
+
+                <div class="filterDiv games"><img src="img/snake.png" alt="Snake"></div>
+              </div>            
+        </div>
+        
+    </div>
+
+    <footer>
+        <div id="footer">
+            <p>&copy; 2021. Hecho con ♥   By Lucas Haendel</p>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
