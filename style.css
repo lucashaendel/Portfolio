@@ -629,6 +629,7 @@ li a:hover, a:focus{
 
     .custom-shape-divider-bottom-1642030938 {
         top: 0;
+        /* position: relative; */
         margin-top: 83vh;
     }
 }
@@ -638,7 +639,7 @@ li a:hover, a:focus{
 
 
 /* ========== RESONSIVE MOBILE ========== */
-@media (min-width:400px) and (max-width: 450px){
+@media (min-width:390px) and (max-width: 450px){
         
     header{
         height: 5vh;
@@ -876,7 +877,7 @@ li a:hover, a:focus{
 
  /* RESPONSIVE MOBILE SMALL */
 
- @media (max-width:399px) {
+ @media (max-width:389px) {
 
     
     header img{
@@ -1014,20 +1015,22 @@ li a:hover, a:focus{
 
     
     .custom-shape-divider-bottom-1642030938 {
+        /* bottom: 0; */
+        /* position: relative; */
         top: 0;
-        margin-top: 55vh;
+        margin-top: 56vh;
     }
 
     #about-me{
         width: 100%;
-        height: 75vh;
-        margin-top: 10vh;
+        height: 100vh;
+        /* margin-top: 10vh; */
         flex-direction: column;
     }
 
     .text{
         width: 85%;
-        height: 10%;
+        height: 100%;
     }
 
     .animado{
@@ -1041,14 +1044,14 @@ li a:hover, a:focus{
     }
     
     .text p{
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: rgb(5, 34, 48);
     }
     
     
     .text h3{
-        margin-top: -25vh;
         margin-bottom: 3vh;
+        margin-top: -25vh;
         padding: 0;
     }
     
@@ -1086,7 +1089,13 @@ li a:hover, a:focus{
         margin: 0;
     }
 
+    .contenedor{
+        margin-top: 5vh;
+    }
     
+    #portfolio{
+        height: 150vh;
+    }
 
     #footer{
         margin-top: 56vh;
