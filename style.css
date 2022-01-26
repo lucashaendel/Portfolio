@@ -576,6 +576,15 @@ li a:hover, a:focus{
 /* ============== COMIENZA EL RESPONSIVE ================== */
 
 @media (max-width: 930px){
+
+    .progreso{
+        z-index: 0;
+    }
+
+    .barra{
+        z-index: 0;
+    }
+
         /* ========= INICIO MENU HAMBURUGUESA ======== */
         .menu
         {
@@ -590,11 +599,13 @@ li a:hover, a:focus{
             transition: clip-path ease-in-out 700ms;
             display: flex;
             justify-content: space-between;
+            z-index: 1;
         }
     
         .site-nav-open
         {
         clip-path: circle(150% at top right);
+        
         }
     
         .menu ul{
@@ -608,6 +619,9 @@ li a:hover, a:focus{
             font-size: 1.5rem;
             margin: 7vh auto;
         }
+        .menu li a:active{
+            color: yellow;
+        }
     
         .menu-toggle{
             padding: 1rem;
@@ -615,6 +629,7 @@ li a:hover, a:focus{
             top: 0;
             right: 0;
             margin-top: 1vh;
+            z-index: 1;
         }
     
         .menu-open .hamburger
@@ -950,18 +965,21 @@ li a:hover, a:focus{
         padding: 0;
     }
 
+    #portfolio{
+        height: 180vh;
+    }
+
     .projects{
         margin: 0;
+        height: 100%;
+        justify-content: flex-start;
     }
 
     .contenedor{
         margin-top: 5vh;
     }
 
-
-    #footer{
-        margin-top: 30vh;
-    }   
+ 
 
 
 }

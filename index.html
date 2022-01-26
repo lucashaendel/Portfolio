@@ -19,10 +19,10 @@
 
          <nav id="site-nav" class="menu">
             <ul>
-                <li><a href="#home" >Inicio</a></li>
-                <li><a href="#about-me"skills">Sobre mi</a></li>
-                <li><a href="#skills"skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li onclick="cambiarClase()"><a href="#home" >Inicio</a></li>
+                <li onclick="cambiarClase()"><a href="#about-me"skills">Sobre mi</a></li>
+                <li onclick="cambiarClase()"><a href="#skills"skills">Skills</a></li>
+                <li onclick="cambiarClase()"><a href="#portfolio">Portfolio</a></li>
             </ul>
         </nav>          
 
@@ -146,32 +146,30 @@
 
     <div id="portfolio">
         <h2>Mis Proyectos</h2>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Ver Todo</button>
+            <button class="btn" onclick="filterSelection('web')"> Web</button>
+            <button class="btn" onclick="filterSelection('games')">Juegos</button>
+        </div>
         <div class="projects">
-
-            <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')">Ver Todo</button>
-                <button class="btn" onclick="filterSelection('web')"> Web</button>
-                <button class="btn" onclick="filterSelection('games')">Juegos</button>
-              </div>
-
-              <div class="contenedor">
-                  <figure class="filterDiv web">
-                      <img src="https://i.ibb.co/cDmGGPc/portenian.png" alt="Portenian">
-                      <div class="capa">
-                          <h3>Portenian Bank</h3>
-                          <p>Poroyecto integrador, realizado con HTML, CSS y Javascript.</p>
-                          <a href="https://portenianbank.vercel.app/" target="_blank"><i class="fas fa-desktop"></i></a>
-                          <a href="https://github.com/lucashaendel/portenian-bank" target="_blank"><i class="fas fa-code"></i></a>
-                      </div>
-                  </figure>
-                  <figure class="filterDiv web">
-                    <img src="https://i.ibb.co/HxnwhHV/pedimon.png" alt="Pedimon">
-                    <div class="capa">
-                        <h3>Pedimon</h3>
-                        <p>Poroyecto en clase, realizado con HTML Y CSS.</p>
-                        <a href="https://pedimon-lph.vercel.app/" target="_blank"><i class="fas fa-desktop"></i></a>
-                        <a href="https://github.com/lucashaendel/pedimon" target="_blank"><i class="fas fa-code"></i></a>
+            <div class="contenedor">
+                <figure class="filterDiv web">
+                    <img src="https://i.ibb.co/cDmGGPc/portenian.png" alt="Portenian">
+                     <div class="capa">
+                        <h3>Portenian Bank</h3>
+                        <p>Poroyecto integrador, realizado con HTML, CSS y Javascript.</p>
+                        <a href="https://portenianbank.vercel.app/" target="_blank"><i class="fas fa-desktop"></i></a>
+                        <a href="https://github.com/lucashaendel/portenian-bank" target="_blank"><i class="fas fa-code"></i></a>
                     </div>
+                </figure>
+                <figure class="filterDiv web">
+                    <img src="https://i.ibb.co/HxnwhHV/pedimon.png" alt="Pedimon">
+                <div class="capa">
+                    <h3>Pedimon</h3>
+                    <p>Poroyecto en clase, realizado con HTML Y CSS.</p>
+                    <a href="https://pedimon-lph.vercel.app/" target="_blank"><i class="fas fa-desktop"></i></a>
+                    <a href="https://github.com/lucashaendel/pedimon" target="_blank"><i class="fas fa-code"></i></a>
+                </div>
                 </figure>
                 <figure class="filterDiv web">
                     <img src="https://i.ibb.co/QXMMhVy/cafe.png" alt="Cafe">
