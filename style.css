@@ -223,6 +223,7 @@ li a:hover, a:focus{
 .text p{
     font-size: 1.1rem;
     color: rgb(5, 34, 48);
+    text-align: start;
 }
 
 .text{
@@ -230,9 +231,15 @@ li a:hover, a:focus{
     height: 90%;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     margin: 0 6%;
+}
+
+
+.text h2, h3, a{
+    text-align: center;
+    align-items: center;
 }
 
 .btn-cv{
@@ -650,8 +657,83 @@ li a:hover, a:focus{
     /* ========= FIN MENU HAMBURUGUESA ======== */
 }
 
+@media (min-width: 1801px){
+    .menu ul li a{
+        font-size: 1.7rem;
+    }
 
-@media (min-width: 1600px) and (max-width: 2999px){
+    .presents{
+        margin-top: 15vh;
+    }
+
+    .presents p, h2{
+        font-size: 2.3rem;
+    }
+
+    .icons a i{
+        font-size: 2.9rem;
+    }
+
+    #about-me{
+        height: 60vh;
+    }
+
+    .text h2{
+        font-size: 3rem;
+    }
+
+    .text h3{
+        font-size: 3.2rem;
+    }
+
+    .text p{
+        font-size: 1.4rem;
+    }
+
+    .button{
+        font-size: 1.5rem;
+    }
+
+    #skills{
+        height: 90vh;
+    }
+
+    #skills h2{
+        font-size: 3rem;
+    }
+
+    .icon-skill p{
+        font-size: 1.3rem;
+    }
+
+    #portfolio{
+        height: 100vh;
+    }
+
+    #portfolio h2{
+        font-size: 3rem;
+    }
+
+    .filterDiv{
+        width: 400px;
+        height: 300px;
+    }
+
+    .capa h3{
+        font-size: 2rem;
+    }
+
+    .capa p{
+        font-size: 2rem;
+    }
+
+    .capa i{
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1599px) and (max-width: 1800px){
     header{
         height: 7vh;
         top: 0;
@@ -669,7 +751,7 @@ li a:hover, a:focus{
     }
 
     .menu ul li a{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
 
@@ -712,8 +794,11 @@ li a:hover, a:focus{
 
     .custom-shape-divider-bottom-1642030938 {
         top: 0;
-        /* position: relative; */
-        margin-top: 83vh;
+        margin-top: 81vh;
+    }
+
+    #about-me  p{
+        text-align: start;
     }
 }
 
