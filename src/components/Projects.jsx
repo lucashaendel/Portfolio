@@ -4,18 +4,6 @@ const Projects = () => {
   return (
     <div id="portfolio">
       <h2>Mis Proyectos</h2>
-      {/* <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Ver Todo
-        </button>
-        <button class="btn" onclick="filterSelection('web')">
-          {" "}
-          Web
-        </button>
-        <button class="btn" onclick="filterSelection('games')">
-          Juegos
-        </button>
-      </div> */}
       <div class="projects">
         <div class="contenedor">
           <figure class="filterDiv web">
@@ -66,6 +54,25 @@ const Projects = () => {
               </a>
               <a
                 href="https://github.com/lucashaendel/task-table"
+                target="_blank"
+              >
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+          </figure>
+          <figure class="filterDiv web">
+            <img
+              src="https://i.ibb.co/BtCPVhM/Screenshot-from-2023-07-13-12-47-37.png"
+              alt="peliculon"
+            />
+            <div class="capa">
+              <h3>Peliculon</h3>
+              <p>Web de peliculas, React, Typescript, API TMDB</p>
+              <a href="https://peliculon.vercel.app/" target="_blank">
+                <i class="fas fa-desktop"></i>
+              </a>
+              <a
+                href="https://github.com/lucashaendel/tmdb-ReactJS"
                 target="_blank"
               >
                 <i class="fas fa-code"></i>
