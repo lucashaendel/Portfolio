@@ -25,13 +25,12 @@
 }
 
 .icon-skill {
-  width: 20%;
-  height: 20vh;
+  width: 25vw;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   flex-direction: column;
   margin: auto 1%;
 }
@@ -44,6 +43,7 @@
 
 .icon-skill p {
   font-size: 1rem;
+  text-align: center;
 }
 
 .icon-skill img:hover {
@@ -51,6 +51,17 @@
   transform: rotate(360deg);
   transform: rotate(360deg);
   transition: 1.3s ease;
+}
+
+.cardSkill {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  margin: 1vh auto;
+  border-radius: 10px;
+  /* border: 1px solid grey; */
 }
 
 @media (min-width: 700px) {
@@ -64,5 +75,13 @@
   }
   #icons-skill {
     width: 95vw;
+  }
+  .cardSkill {
+    width: 30%;
+    height: 50ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
