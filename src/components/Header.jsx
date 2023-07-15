@@ -3,7 +3,7 @@ import "../assets/styles/header.css";
 import "../main";
 
 const Header = () => {
-  const cambiarClase = () => {
+  const handleMenu = () => {
     let siteNav = document.getElementById("site-nav");
     siteNav.classList.toggle("site-nav-open");
     let menuOpen = document.getElementById("menu-toggle");
@@ -15,22 +15,23 @@ const Header = () => {
       <img src="https://i.ibb.co/ZxgRtPs/lh-logo.png" alt="lh-logo" />
       <nav id="site-nav" className="menu">
         <ul>
-          <li Onclick={cambiarClase}>
+          <li onClick={handleMenu}>
             <a href="#home">Inicio</a>
           </li>
-          <li onclick="cambiarClase()">
+          <li onClick={handleMenu}>
             <a href="#about-me">Sobre mi</a>
           </li>
-          <li onclick="cambiarClase()">
+          <li onClick={handleMenu}>
             <a href="#skills">Skills</a>
           </li>
-          <li onclick="cambiarClase()">
+          <li onClick={handleMenu}>
             <a href="#portfolio">Portfolio</a>
           </li>
         </ul>
       </nav>
-      <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
-        <div className="hamburger"></div>
+      <div id="menu-toggle" class="menu-toggle" onClick={handleMenu}>
+        <div className="hamburger" onClick={handleMenu}></div>
+        {/* <button onClick={handle}>asd</button> */}
       </div>
     </header>
   );
