@@ -43,7 +43,7 @@ const AboutMe = () => {
           href={pdf}
           target="_blank"
           rel="noopener noreferrer"
-          download="Lucas Haendel - Desarrollador.pdf"
+          // download="Lucas Haendel - Desarrollador.pdf"
           data-aos="fade-down"
         >
           <button class="button type3">Descargar CV</button>
