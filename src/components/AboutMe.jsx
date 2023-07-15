@@ -41,6 +41,8 @@ const AboutMe = () => {
 
         <a
           href={pdf}
+          target="_blank"
+          rel="noreferrer"
           download="Lucas Haendel - Desarrollador.pdf"
           data-aos="fade-down"
         >
