@@ -30,7 +30,7 @@ const Header = () => {
         </ul>
       </nav>
       <div id="menu-toggle" class="menu-toggle" onClick={handleMenu}>
-        <div className="hamburger" onClick={handleMenu}></div>
+        <div className="hamburger"></div>
         {/* <button onClick={handle}>asd</button> */}
       </div>
     </header>
