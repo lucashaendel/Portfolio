@@ -14,9 +14,6 @@ const Projects = () => {
             <div class="capa">
               <h3>Sistema de Turnos</h3>
               <p>Proyecto prof. de empresa, realizado con ReactJs, NextJs</p>
-              <a href="#" target="_blank">
-                <i class="fas fa-desktop"></i>
-              </a>
               <a
                 href="https://github.com/lucashaendel/webAPP-Reserva-de-turno"
                 target="_blank"
@@ -67,12 +64,44 @@ const Projects = () => {
             />
             <div class="capa">
               <h3>Peliculon</h3>
-              <p>Web de peliculas, React, Typescript, API TMDB</p>
+              <p>Web de peliculas, React, Redux, API TMDB</p>
               <a href="https://peliculon.vercel.app/" target="_blank">
                 <i class="fas fa-desktop"></i>
               </a>
               <a
                 href="https://github.com/lucashaendel/tmdb-ReactJS"
+                target="_blank"
+              >
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+          </figure>
+          <figure class="filterDiv web">
+            <img
+              src="https://i.ibb.co/RjNv1cg/Screenshot-from-2023-07-15-17-12-17.png"
+              alt="calculadora"
+            />
+            <div class="capa">
+              <h3>Calculadora</h3>
+              <p>App Calculadora, React Native, Expo.</p>
+              <a
+                href="https://github.com/lucashaendel/Calculator-React-Native"
+                target="_blank"
+              >
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+          </figure>
+          <figure class="filterDiv web">
+            <img
+              src="https://i.ibb.co/Tmp4DdP/Screenshot-from-2023-07-15-17-14-36.png"
+              alt="Memory"
+            />
+            <div class="capa">
+              <h3>Memory Game</h3>
+              <p>Juego de memoria, React Native, Expo.</p>
+              <a
+                href="https://github.com/lucashaendel/Memory-Game-React-Native"
                 target="_blank"
               >
                 <i class="fas fa-code"></i>
