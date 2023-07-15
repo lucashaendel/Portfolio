@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../assets/styles/aboutMe.css";
+import pdf from "../assets/cv/LucasHaendel.pdf";
 import Aos from "aos";
 const AboutMe = () => {
   useEffect(() => {
@@ -37,7 +38,12 @@ const AboutMe = () => {
           laboral. Que me brinde la posibilidad de generar nuevas experiencias y
           conocimientos.
         </p>
-        <a href="Lucas-Haendel.pdf" target="_blank" data-aos="fade-down">
+
+        <a
+          href={pdf}
+          download="Lucas Haendel - Desarrollador.pdf"
+          data-aos="fade-down"
+        >
           <button class="button type3">Descargar CV</button>
         </a>
       </article>
