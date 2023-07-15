@@ -86,9 +86,9 @@
   margin: auto;
   padding: auto;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100vw;
-  height: 5ch;
+  height: 7vh;
 }
 
 .custom-shape-divider-bottom-1642030938 svg {
