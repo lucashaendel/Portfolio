@@ -72,7 +72,7 @@
 }
 
 .img-lucas img {
-  width: auto;
+  width: 0px;
   height: 100%;
   margin-top: 2vh;
   border-radius: 50px;
@@ -110,6 +110,7 @@
   }
   .img-lucas img {
     /* opacity: 1; */
+    width: auto;
     height: auto;
     visibility: visible;
   }
@@ -137,5 +138,11 @@
   .maq {
     justify-content: start;
     margin-left: 0.5vw;
+  }
+}
+@media (max-width: 340px) {
+  #home {
+    height: 85vh;
+    margin-bottom: 15vh;
   }
 }
