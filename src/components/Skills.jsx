@@ -154,6 +154,7 @@ const Skills = () => {
             />
             <p>Postgres SQL</p>
           </figure>
+
           <figure class="icon-skill">
             <img
               src="https://img.icons8.com/fluency/480/000000/mysql-logo.png"
