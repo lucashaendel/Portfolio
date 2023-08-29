@@ -163,6 +163,13 @@ const Skills = () => {
           </figure>
           <figure class="icon-skill">
             <img
+              src="https://img.icons8.com/color/512/python.png"
+              alt="Python"
+            />
+            <p>Python</p>
+          </figure>
+          <figure class="icon-skill">
+            <img
               src="https://img.icons8.com/color/512/java-coffee-cup-logo.png"
               alt="Java"
             />
