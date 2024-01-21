@@ -40,7 +40,7 @@ const AboutMe = () => {
         </p>
 
         <a
-          href={pdf}
+          href="./cv/lucashaendel.pdf"
           target="_blank"
           rel="noopener noreferrer"
           // download="Lucas Haendel - Desarrollador.pdf"
